@@ -1,2 +1,2 @@
-# bayesian_analysis_orie6217
+# Applied Bayesian Analysis
 Course materials for ORIE6217 / CS6384 Applied Bayesian Analysis
