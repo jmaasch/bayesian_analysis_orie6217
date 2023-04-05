@@ -154,11 +154,11 @@ class mixture_model_misspecified_model final : public model_base_crtp<mixture_mo
         current_statement__ = 12;
         lp_accum__.add(
           stan::math::normal_lpdf<propto__>(
-            stan::model::rvalue(mu, "mu", stan::model::index_uni(1)), 2, 2));
+            stan::model::rvalue(mu, "mu", stan::model::index_uni(1)), 1, 1));
         current_statement__ = 13;
         lp_accum__.add(
           stan::math::normal_lpdf<propto__>(
-            stan::model::rvalue(mu, "mu", stan::model::index_uni(2)), 4, 2));
+            stan::model::rvalue(mu, "mu", stan::model::index_uni(2)), 5, 1));
         current_statement__ = 14;
         lp_accum__.add(stan::math::beta_lpdf<propto__>(theta, 1, 1));
         current_statement__ = 15;

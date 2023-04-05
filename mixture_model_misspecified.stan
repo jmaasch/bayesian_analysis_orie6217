@@ -25,8 +25,8 @@ https://en.wikipedia.org/wiki/Student%27s_t-distribution#Bayesian_inference:_pri
 */
 model {
     sigma ~ normal(2, 2);
-    mu[1] ~ normal(2, 2);
-    mu[2] ~ normal(4, 2);
+    mu[1] ~ normal(1, 1);
+    mu[2] ~ normal(5, 1);
     theta ~ beta(1, 1);
     nu ~ lognormal(1, 1);
     for (n in 1:N)

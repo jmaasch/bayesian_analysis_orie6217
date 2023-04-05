@@ -14,8 +14,8 @@ Model data as Gaussian mixture where components have equal variance.
 */
 model {
     sigma ~ normal(2, 2);
-    mu[1] ~ normal(2, 2);
-    mu[2] ~ normal(4, 2);
+    mu[1] ~ normal(1, 1);
+    mu[2] ~ normal(5, 1);
     theta ~ beta(1, 1);
     for (n in 1:N)
         target += log_mix(theta,
